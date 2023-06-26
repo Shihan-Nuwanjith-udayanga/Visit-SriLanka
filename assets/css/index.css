@@ -1,0 +1,270 @@
+/*------------- header Styles start ---------------*/
+header{
+    width: 100%;
+    height: 70px;
+    background: #003b7e;
+    position: sticky;
+    display: flex;
+}
+
+header > div{
+    border-style: none;
+    flex: 2;
+}
+
+body > header > div > img{
+    width: 260px;
+    margin-left: 100px;
+}
+
+header > ul{
+    list-style: none;
+    margin: 10px;
+    flex: 1;
+}
+
+header > ul > a{
+    text-decoration: none;
+}
+
+header > ul > a > li{
+    display: inline-block;
+    color: white;
+    font-family: "Roboto";
+    padding: 18px;
+}
+
+header > ul > a > li:hover{
+    color: darkgray;
+}
+
+/*------------- header Styles end ---------------*/
+
+/*------------- Main Styles Start ---------------*/
+#section01{
+    width: 100%;
+    height: 600px;
+    position: relative;
+}
+
+#section01 > section{
+    width: 85%;
+    height: 550px;
+    background: black;
+    position: absolute;
+    overflow: hidden;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    box-shadow: 0px 0px 10px 2px #5c5c5c;
+}
+
+#section01 > section > aside{
+    width: 600%;
+    height: 100%;
+    margin-right: 300px;
+    display: flex;
+    animation: slider 20s infinite alternate;
+}
+
+#section01 > section > aside > div{
+    height: 100%;
+    width: 100%;
+}
+
+#section01 > section > aside > div:nth-child(1){
+    background: url("../img/img1.png");
+    background-size: cover;
+    background-position: center;
+}
+
+#section01 > section > aside > div:nth-child(2){
+    background: url("../img/img2.png");
+    background-size: cover;
+    background-position: center;
+}
+
+#section01 > section > aside > div:nth-child(3){
+    background: url("../img/img3.png");
+    background-size: cover;
+    background-position: center;
+}
+
+#section01 > section > aside > div:nth-child(4){
+    background: url("../img/img4.png");
+    background-size: cover;
+    background-position: center;
+}
+
+#section01 > section > aside > div:nth-child(5){
+    background: url("../img/img5.png");
+    background-size: cover;
+    background-position: center;
+}
+
+#section01 > section > aside > div:nth-child(6){
+    background: url("../img/img6.png");
+    background-size: cover;
+    background-position: center;
+}
+
+@keyframes slider {
+    0%, 15% {
+        transform: translate(0%);
+    }
+    20%, 30% {
+        transform: translate(-16.65%);
+    }
+    35%, 50% {
+        transform: translate(-33.35%);
+    }
+    55%, 70% {
+        transform: translate(-50%);
+    }
+    75%, 90% {
+        transform: translate(-66.65%);
+    }
+    95%,100%{
+        transform: translate(-83.35%);
+    }
+}
+
+
+/*------------- Main Styles End ---------------*/
+
+/*------------- Footer Styles Start ---------------*/
+body > footer{
+    width: 100%;
+    height: 350px;
+    background-color: #003b7e;
+    display: flex;
+    flex-direction: column;
+}
+
+body > footer > div:nth-child(1){
+    flex: 3;
+    display: flex;
+}
+
+body > footer > div:nth-child(1) > div:nth-child(1){
+    flex: 1;
+    position: relative;
+    padding: 10px;
+}
+
+/*footer image styles*/
+body > footer > div:nth-child(1) > div:nth-child(1) > img{
+    width: 70%;
+    padding: 30px 30px 10px 30px;
+    right: 0;
+    position: absolute;
+}
+
+body > footer > div:nth-child(1) > div:nth-child(1) > p{
+    width: 70%;
+    position: absolute;
+    right: 0;
+    bottom: 50px;
+    padding: 0px 30px 10px 30px;
+    color: white;
+    font-family: "Roboto";
+    font-weight: 300;
+    font-size: 15px;
+    text-align: center;
+}
+
+body > footer > div:nth-child(1) > div:nth-child(2){
+    flex: 1;
+    padding: 10px;
+}
+
+body > footer > div:nth-child(1) > div:nth-child(2) > h2{
+    font-family: "Roboto";
+    color: white;
+    font-weight: 400;
+    text-align: center;
+}
+
+body > footer > div:nth-child(1) > div:nth-child(2) > ul > a{
+    text-decoration: none;
+}
+
+body > footer > div:nth-child(1) > div:nth-child(2) > ul{
+    text-align: left;
+    list-style: none;
+}
+
+body > footer > div:nth-child(1) > div:nth-child(2) > ul > a > li{
+    color: white;
+    font-family: "Roboto";
+    padding: 10px;
+    width: fit-content;
+    margin-left: 150px;
+}
+
+body > footer > div:nth-child(1) > div:nth-child(2) > ul > a > li:hover{
+    color: darkgray;
+}
+
+body > footer > div:nth-child(1) > div:nth-child(3){
+    flex: 1;
+    padding: 10px;
+    position: relative;
+}
+
+body > footer > div:nth-child(1) > div:nth-child(3) > h2{
+    font-family: "Roboto";
+    color: white;
+    font-weight: 400;
+    margin-left: 40px;
+}
+
+.mainDiv{
+    display: flex;
+}
+
+.div{
+    width: 35px;
+    height: 35px;
+    background: white;
+    border-radius: 5px;
+    position: relative;
+    margin: 10px;
+}
+
+.div > img{
+    width: 25px;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    position: absolute;
+}
+
+.mainDiv > h4{
+    width: fit-content;
+    font-family: "Roboto";
+    color: white;
+    font-weight: 500;
+    margin-left: 10px;
+}
+
+body > footer > div:nth-child(1) > div:nth-child(3) > div:nth-child(4) > a > div:hover{
+    background-color: darkgray;
+}
+
+#footer{
+    flex: 0.5;
+    text-align: center;
+}
+
+/*footer copyright text styles*/
+#footer > small{
+    color: white;
+    font-family: "Roboto";
+}
+
+/*------------- Footer Styles end ---------------*/
